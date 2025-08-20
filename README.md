@@ -37,8 +37,8 @@ cnn-waste-sorter/
 │── notebooks/            # Jupyter/Colab notebooks
 │── src/                  # Source code
 │   ├── preprocessing.py  # Data preprocessing & augmentation
-│   ├── train.py          # Training script
-│   ├── evaluate.py       # Evaluation script
+│   ├── model 1           # Training & Evaluation model 1 script
+│   ├── model 2           # Training & Evaluation model 2 script
 │── models/               # Saved models (.h5)
 │── results/              # Plots, logs, confusion matrix
 │── README.md             # Project documentation
