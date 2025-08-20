@@ -34,7 +34,7 @@ The workflow includes:
 ```text
 cnn-waste-sorter/
 │── data/                 # Dataset (or link/instructions)
-│── notebooks/            # Jupyter/Colab notebooks
+│── notebooks/            # Colab notebooks
 │   ├── preprocessing.py  # Data preprocessing & augmentation
 │   ├── model 1           # Training & Evaluation model 1 script
 │   ├── model 2           # Training & Evaluation model 2 script
