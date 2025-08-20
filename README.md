@@ -35,14 +35,12 @@ The workflow includes:
 cnn-waste-sorter/
 │── data/                 # Dataset (or link/instructions)
 │── notebooks/            # Jupyter/Colab notebooks
-│── src/                  # Source code
 │   ├── preprocessing.py  # Data preprocessing & augmentation
 │   ├── model 1           # Training & Evaluation model 1 script
 │   ├── model 2           # Training & Evaluation model 2 script
 │── models/               # Saved models (.h5)
-│── results/              # Plots, logs, confusion matrix
 │── README.md             # Project documentation
-│── requirements.txt      # Dependencies
+
 ```
 ---
 
