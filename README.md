@@ -5,42 +5,45 @@ Built with **TensorFlow/Keras**.
 ---
 
 ## Overview
-This project implements a **deep learning approach** to waste classification.  
-By leveraging **EDA insights, custom preprocessing, and CNNs**, the model learns to distinguish waste types from images.  
+
+This project implements a **deep learning approach** to sustainable waste management.  
+By combining **exploratory data analysis (EDA)**, **custom preprocessing (HSV brightness correction)**, and a **CNN with regularization**, the model learns to accurately distinguish between three waste categories.
 
 The workflow includes:
-- Dataset augmentation & balancing
-- Brightness correction (HSV preprocessing)
-- Custom CNN with regularization
-- Model evaluation with detailed metrics
+
+1. **EDA** for dataset inspection and balancing.  
+2. **Custom Preprocessing** with brightness correction in the HSV color space.  
+3. **CNN Architecture** with Conv2D, Batch Normalization, Dropout, and dense layers.  
+4. **Training Optimization** with EarlyStopping, ReduceLROnPlateau, and class weights.  
+5. **Evaluation** using accuracy, precision, recall, F1-score, and confusion matrix.
 
 ---
 
 ## Features
-- **EDA-driven preprocessing** (brightness equalization, augmentation, class balance)  
-- **Custom CNN** with Batch Normalization & Dropout  
-- **Training optimizations**: EarlyStopping + ReduceLROnPlateau  
-- **Evaluation**: Accuracy, Precision, Recall, F1-score, Confusion Matrix  
-- Exportable trained model (`.h5`)  
+
+* **EDA-driven preprocessing** (brightness equalization, augmentation, class balance)  
+* **Custom CNN** with multiple convolutional blocks and dropout layers  
+* **Training optimizations**: EarlyStopping + ReduceLROnPlateau  
+* **Evaluation**: Accuracy, Precision, Recall, F1-score, Confusion Matrix  
+* **Exportable trained model** (`.h5`) for deployment  
 
 ---
 
 ## Repository Structure
+
+```text
 cnn-waste-sorter/
-│── data/ # Dataset (or link/instructions)
-│── notebooks/ # Jupyter/Colab notebooks
-│── src/ # Source code
-│ ├── preprocessing.py # Data preprocessing & augmentation
-│ ├── train.py # Training script
-│ ├── evaluate.py # Evaluation script
-│── models/ # Saved models (.h5)
-│── results/ # Plots, logs, confusion matrix
-│── README.md # Project documentation
-│── requirements.txt # Dependencies
-
----
-
-
+│── data/                 # Dataset (or link/instructions)
+│── notebooks/            # Jupyter/Colab notebooks
+│── src/                  # Source code
+│   ├── preprocessing.py  # Data preprocessing & augmentation
+│   ├── train.py          # Training script
+│   ├── evaluate.py       # Evaluation script
+│── models/               # Saved models (.h5)
+│── results/              # Plots, logs, confusion matrix
+│── README.md             # Project documentation
+│── requirements.txt      # Dependencies
+```
 ---
 
 ## Installation
@@ -68,11 +71,13 @@ Confusion matrix & classification report show:
 Strong performance on E-Waste
 Dry/Wet waste improved with class weighting & augmentation
 
+```text
 Example metrics (previous run):
               precision    recall  f1-score   support
    Dry waste       0.77      0.50      0.61
      E-Waste       0.73      0.93      0.81
    Wet waste       0.77      0.82      0.80
+```
 
 ## Future Improvements
   - Try EfficientNet / MobileNetV2 for transfer learning
