@@ -81,7 +81,6 @@ Example metrics (previous run):
 
 ## Future Improvements
   - Try EfficientNet / MobileNetV2 for transfer learning
-  - Deploy as a Streamlit/Flask web app for real-time predictions
   - Expand dataset with more diverse waste images
 
 ## License
